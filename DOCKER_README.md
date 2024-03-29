@@ -28,7 +28,7 @@ Mac: [Install Docker Desktop for Mac](https://docs.docker.com/docker-for-mac/ins
 ## Login to ghcr.io
 
    1. Open Command Prompt/Terminal of Choice
-   2. `export ACCESS_TOKEN=<TOKEN VALUE>` <<-- PSAT Value
+   2. `export ACCESS_TOKEN=<TOKEN VALUE>` <<-- PAT Value
    3. `export USER_NAME=<NAME VALUE>` <<-- GitHub Username
    4. `echo ACCESS_TOKEN | docker login ghcr.io -u USERNAME --password-stdin`
 
