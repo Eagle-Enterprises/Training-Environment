@@ -31,6 +31,7 @@ Prerequisites
 
     git add .
     git commit -m "Implemented feature XYZ"
+    git push origin
 
 3. Record a Screen Capture
 
