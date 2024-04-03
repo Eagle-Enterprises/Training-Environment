@@ -44,7 +44,8 @@ Prerequisites
 
     Once the changes have been reviewed, tested, and the screen capture recorded,
     push your branch into the main branch. Tag @Cybower (Adam) and @vino74611
-    (Serena) as reviewers on the Push Request
+    (Serena) as reviewers on the Push Request. Once this is done, we can consider
+    the story Resolved "Done".
 
 5. Documentation
 
