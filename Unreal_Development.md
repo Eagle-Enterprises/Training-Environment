@@ -27,11 +27,11 @@ Prerequisites
     Follow your team's coding standards and best practices.
     Regularly commit your changes with descriptive commit messages.
 
-    bash
-
+    **Make sure you SAVE & CLOSE Unreal Engine BEFORE COMMITTING**
     git add .
     git commit -m "Implemented feature XYZ"
     git push origin
+
 
 3. Record a Screen Capture
 
