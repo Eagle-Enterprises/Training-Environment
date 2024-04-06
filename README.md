@@ -28,3 +28,10 @@ Unreal Engine project
 ## Workflow
 
 Please see the documentation here for [Unreal Development](Unreal_Development.md)
+
+## FAQ
+
+build.cmd doesn't generate the Blocks.uproject files
+    (Windows) Fix is to clone and run build.cmd in another directory OUTSIDE
+    of the repository. Once that builds, copy the Blocks.uproject file to the
+    git repository and then open that file in Unreal 4.27
