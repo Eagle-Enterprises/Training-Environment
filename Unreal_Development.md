@@ -32,7 +32,6 @@ Prerequisites
     git commit -m "Implemented feature XYZ"
     git push origin
 
-
 3. Record a Screen Capture
 
     Before pushing your changes into the main branch, record a screen capture
