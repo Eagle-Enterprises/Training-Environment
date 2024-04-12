@@ -1,0 +1,36 @@
+name: C/C++ Training Environment CI
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  train-environment-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup C/C++
+        uses: actions/setup-cpp@v2
+        with:
+          cpp-version: "14"
+          architectures: ["x64"]
+
+      - name: Configure
+        run: ./configure --prefix=$GITHUB_WORKSPACE/build
+
+      - name: Build
+        run: make -j $(nproc)
+
+      - name: Test
+        run: make check
+
+      - name: Package
+        run: make package
+
+      - name: Upload package to the repository
+        uses: actions/upload-artifact@v3
+        with:
+          name: package
+          path: build/package
