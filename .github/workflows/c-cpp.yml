@@ -3,16 +3,29 @@ name: C/C++ CI
 on: [push]
 
 jobs:
-  c-cpp-build:
+  train-environment-build:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
-      - name: configure
-        run: ./configure
-      - name: make
-        run: make
-      - name: make check
+
+      - name: Setup C/C++
+        uses: actions/setup-cpp@v3
+
+      - name: Configure
+        run: ./configure --prefix=$GITHUB_WORKSPACE/build
+
+      - name: Build
+        run: make -j $(nproc)
+
+      - name: Test
         run: make check
-      - name: make distcheck
-        run: make distcheck
+
+      - name: Package
+        run: make package
+
+      - name: Upload package to the repository
+        uses: actions/upload-artifact@v3
+        with:
+          name: package
+          path: build/package
