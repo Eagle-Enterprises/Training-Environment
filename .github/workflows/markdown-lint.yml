@@ -20,4 +20,4 @@ jobs:
 
       - name: Run markdownlint
         run: |
-          find . -name '*.md' -not -path './references/*' | xargs markdownlint
+          find . -name '*.md' -not -path './AirSim/*' | xargs markdownlint
