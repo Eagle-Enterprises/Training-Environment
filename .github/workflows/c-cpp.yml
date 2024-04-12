@@ -5,14 +5,22 @@ on:
     branches: ["*"]
 
 jobs:
-  train-environment-build:
+  c-linter:
+    name: c-linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: c-linter
+        uses: ArtificialAmateur/cpp-linter-action@master
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  c-cpp-build:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v3
 
       - name: Setup C/C++
-        uses: actions/setup-cpp@v3
+        uses: aminya/setup-cpp@v1
 
       - name: Configure
         run: ./configure --prefix=$GITHUB_WORKSPACE/build
