@@ -3,7 +3,7 @@ name: C/C++ CI
 on: [push]
 
 jobs:
-  build:
+  c-cpp-build:
     runs-on: ubuntu-latest
 
     steps:
