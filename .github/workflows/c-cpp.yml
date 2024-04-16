@@ -22,9 +22,6 @@ jobs:
       - name: Setup C/C++
         uses: aminya/setup-cpp@v1
 
-      - name: Configure
-        run: ./configure --prefix=$GITHUB_WORKSPACE/build
-
       - name: Build
         run: make -j $(nproc)
 
