@@ -1,37 +1,43 @@
 # Training-Environment
 
-Software Repository for files relating to the Training Environment IPT
+Software Repository for files relating to the Training Environment IPT. This
+holds all the plugin files, Unreal Assets, and Unreal Blueprint files used to
+create the Eagle Enterprises Training Environment.
 
-## AirSim/Unreal
+## Visual Studio 2022 (the purple one, not the blue one)
 
-Holds all the plugin files and needs to be copied over into an unreal project !
+How to setup Visual Studio for gUnreal Engine [Game Development](<https://docs.unrealengine.com/5.0/en-US/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine/>)
 
-## Make sure to download Visual Studio 2022 (the purple one, not the blue one)
+Once complete, congrats you just took your first step into game development 😊🕹
 
-Heres the link from UE5 on how to setup Visual Studio for game development:
-<https://docs.unrealengine.com/5.0/en-US/setting-up-visual-studio-development-environment-for-cplusplus-projects-in-unreal-engine/>
+## Install Unreal Engine v.4.27.2
 
-Once complete, congrats you just took your first step into game development 😊
+1. Download the [Epic Games Launcher](https://www.unrealengine.com/en-US/download>)
+2. Create an Account and Sign In
+3. On the left hand side, navigate to UE
+4. Click the 'plus' sign next to `Engine Versions` and select `4.27.2`
+5. Once installed, the Launch Button in the upper right should have the version included
 
-## Make sure to have Unreal install and configured so that you can launch it
+## Clone and Build AirSim
 
-To download Unreal Engine 4.27.2 download the [Epic Games Launcher](https://www.unrealengine.com/en-US/download>)
+1. `git clone https://github.com/Microsoft/AirSim.git`
+2. `cd AirSim`
+3. Open Developer Command Prompt for VA 2022 **Run as Administrator**
+4. Run `build.cmd`
+5. Verify `AirSim/Unreal/Environments/Blocks/Blocks.uproject` exists
 
-Next find AirSim.sln in the AirSim folder in the Training-Environment repo,
-open that file with Visual Studio 2022
+    [AirSim Documentation Source](https://microsoft.github.io/AirSim/build_windows/#build-airsim>)
 
-In Training-Environment Repo goto AirSim/Unreal/Environments/Blocks
-Open the Blocks.sln file (its a solutions file for visual studio 2022)
-Then make sure its in DebugGame_Editor->Blocks and hit F5 to run the
-Unreal Engine project
+## Clone Training Environment Repository
 
-## Workflow
+1. Outside of the AirSim Directory: `git clone https://github.com/Eagle-Enterprises/Training-Environment.git`
+2. Copy the file from Step 5 above to `Training-Environment/AirSim/Unreal/Environments/Blocks/`
+
+## Open Project
+
+1. Open Unreal Engine 4.27.2
+2. Have it open the file `Training-Environment/AirSim/Unreal/Environments/Blocks/Blocks.uproject`
+
+## Unreal Development
 
 Please see the documentation here for [Unreal Development](Unreal_Development.md)
-
-## FAQ
-
-build.cmd doesn't generate the Blocks.uproject files
-    (Windows) Fix is to clone and run build.cmd in another directory OUTSIDE
-    of the repository. Once that builds, copy the Blocks.uproject file to the
-    git repository and then open that file in Unreal 4.27
