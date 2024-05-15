@@ -22,7 +22,8 @@ Describe the function, inputs, and outputs of a blueprint
 
 **Description:**
 
-This Widget BP show the Pause Menu. Has a button to Continue, Reset (In Progress), and to Exit the Game.
+This Widget BP show the Pause Menu. Has a button to Continue, Reset
+(In Progress), and to Exit the Game.
 
 **Author:** Adam
 
@@ -34,7 +35,9 @@ This Widget BP show the Pause Menu. Has a button to Continue, Reset (In Progress
 
 **Description:**
 
-This instance stores variables to be tracked throughout the entirety of the demonstration. Variables like how many demo's have been completed and how mush time has elapsed per demo to be displayed in the Game End Screen.
+This instance stores variables to be tracked throughout the entirety of the
+demonstration. Variables like how many demo's have been completed and how much
+time has elapsed per demo to be displayed in the Game End Screen.
 
 **Author:** Adam
 
@@ -46,7 +49,8 @@ This instance stores variables to be tracked throughout the entirety of the demo
 
 **Description:**
 
-Widget that displays the times taken per demo and has buttons to either restart the training Environment or Exit.
+Widget that displays the times taken per demo and has buttons to either restart
+the training Environment or Exit.
 
 **Author:** Adam
 
@@ -58,7 +62,8 @@ Widget that displays the times taken per demo and has buttons to either restart 
 
 **Description:**
 
-This actor contains the logic to show the Pause Menu and tracks on Reset (which is broken at the moment)
+This actor contains the logic to show the Pause Menu and tracks on Reset (which
+is broken at the moment)
 
 **Author:** Adam
 
@@ -70,7 +75,19 @@ This actor contains the logic to show the Pause Menu and tracks on Reset (which 
 
 **Description:**
 
-This BP contains all of the logic that spawns the BP_Level_Progress_Actor and advances the game play through the 3 demonstrations (TODO)
+This BP contains all of the logic that spawns the BP_Level_Progress_Actor and
+advances the game play through the 3 demonstrations (TODO)
+
+**Author:** Adam
+
+--------------------
+## BP_Demo_Display
+
+**Path:** `/AirSim/Unreal/Environments/Blocks/Content/Blueprint/BP_Demo_Display`
+
+**Description:**
+
+This Widget Blueprint displays the current number of the demo on the HUD
 
 **Author:** Adam
 
