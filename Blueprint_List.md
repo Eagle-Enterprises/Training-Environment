@@ -22,8 +22,8 @@ Describe the function, inputs, and outputs of a blueprint
 
 **Description:**
 
-This Widget BP show the Pause Menu. Has a button to Continue, Reset
-(In Progress), and to Exit the Game.
+This Widget BP show the Pause Menu. Has a button to Continue, Reset,
+and to Exit the Game.
 
 **Author:** Adam
 
