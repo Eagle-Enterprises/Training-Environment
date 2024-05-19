@@ -1,3 +1,6 @@
+## Training Environment Map Data
+AirSim/Unreal/Environments/Blocks/Content/Maps/FlyingExampleMap.umap
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
