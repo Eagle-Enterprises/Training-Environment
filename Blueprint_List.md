@@ -90,6 +90,29 @@ advances the game play through the 3 demonstrations (TODO)
 
 This Widget Blueprint displays the current number of the demo on the HUD
 
-**Author:** Adam
+--------------------
+
+## BP_UAV_HUD
+
+**Path:** `/AirSim/Unreal/Environments/Blocks/Content/Blueprint/`
+
+**Description:**
+
+This Widget Blueprint displays the HUD for the lower camera.
+
+**Author:** Faith
+
+--------------------
+--------------------
+
+## BP_Enemy_Asset (will double check name)
+
+**Path:** `/AirSim/Unreal/Environments/Blocks/Content/Blueprint/`
+
+**Description:**
+
+This blueprint spawns enemy assets randomly each round.
+
+**Author:** Faith
 
 --------------------
