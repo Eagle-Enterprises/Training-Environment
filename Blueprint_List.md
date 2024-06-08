@@ -105,7 +105,7 @@ This Widget Blueprint displays the HUD for the lower camera.
 --------------------
 --------------------
 
-## BP_Enemy_Asset (will double check name)
+## BP_Opponent_Random_Asset
 
 **Path:** `/AirSim/Unreal/Environments/Blocks/Content/Blueprint/`
 
